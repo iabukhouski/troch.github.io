@@ -249,7 +249,9 @@ is simply a function returning a rendered component: `rendered_component = f(dat
 Components are composed together by having a parent / child relationship. Like in any other GUI, components are organised in a tree. Each component has a parent,
 and components can have children and siblings.
 In the front-end, we traditionally use HTML to describe how elements are organised together. HTML is compiled to DOM elements (`Element` objects). A rendered component can consist of one or more DOM elements, depending on how we want to break down our UI. If we keep following this reasonning,
-our UI is a component itself made of other components... This is another box ticked: an UI is __composable__.
+our UI is a component itself made of other components... 
+
+This is another box ticked: a UI is __composable__.
 
 If you remember what higher-order functions are, we can also have higher-order components:
 - A component taking a component as an argument and wrapping aditional content around it to provide some context. This would be the case of a modal component.
